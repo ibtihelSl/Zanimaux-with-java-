@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="541.0" prefWidth="845.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.EvenementClientController">
+   <children>
+      <SplitPane dividerPositions="0.12710280373831775" layoutX="1.0" layoutY="1.0" orientation="VERTICAL" prefHeight="537.0" prefWidth="844.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label fx:id="home" layoutX="26.0" layoutY="17.0" text="Home" textFill="#1e0dd0">
+                     <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="evenement" layoutX="102.0" layoutY="17.0" text="Evenement" textFill="#1e0dd0">
+                     <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="association" layoutX="235.0" layoutY="17.0" text="Association" textFill="#1e0dd0">
+                     <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="adoption" layoutX="377.0" layoutY="17.0" prefHeight="32.0" prefWidth="107.0" text="Adoption" textFill="#1e0dd0">
+                     <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="petsitter" layoutX="490.0" layoutY="17.0" text="PetSitter" textFill="#1e0dd0">
+                     <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="magasin" layoutX="604.0" layoutY="17.0" prefHeight="32.0" prefWidth="90.0" text="Magasin" textFill="#1e0dd0">
+                     <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="veterinaire" layoutX="709.0" layoutY="17.0" text="Veterinaire" textFill="#1e0dd0">
+                     <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="481.0" prefWidth="842.0">
+               <children>
+                  <ImageView fx:id="img11" fitHeight="562.0" fitWidth="845.0" layoutX="-3.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../img/img11.jpg" />
+                     </image>
+                  </ImageView>
+                  <TableView fx:id="tabEventC" layoutX="34.0" layoutY="117.0" prefHeight="263.0" prefWidth="678.0">
+                    <columns>
+                      <TableColumn fx:id="titre2" prefWidth="136.0" text="Titre" />
+                      <TableColumn fx:id="adresse2" prefWidth="110.0" text="Adresse" />
+                        <TableColumn fx:id="datedebut2" minWidth="8.0" prefWidth="87.0" text="Date début" />
+                        <TableColumn fx:id="datefin2" prefWidth="78.0" text="Date fin" />
+                        <TableColumn fx:id="type2" minWidth="0.0" prefWidth="50.0" text="Type" />
+                        <TableColumn fx:id="nbrplace2" minWidth="9.0" prefWidth="88.0" text="Nombre Place" />
+                        <TableColumn fx:id="details2" prefWidth="127.0" text="Détails" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="participerbutton" layoutX="738.0" layoutY="200.0" mnemonicParsing="false" onAction="#Participer" prefHeight="32.0" prefWidth="90.0" text="Participer" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

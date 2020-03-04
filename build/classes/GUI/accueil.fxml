@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="603.0" prefWidth="913.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AccueilController">
+   <children>
+      <SplitPane dividerPositions="0.12479201331114809" layoutX="-1.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="603.0" prefWidth="913.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label fx:id="home" layoutX="8.0" layoutY="20.0" prefHeight="32.0" prefWidth="64.0" text="Home" textFill="#1615d1">
+                     <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="evenement" layoutX="92.0" layoutY="17.0" prefHeight="38.0" prefWidth="116.0" text="Evenement" textFill="#1a0ac9">
+                     <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="association" layoutX="228.0" layoutY="17.0" prefHeight="38.0" prefWidth="122.0" text="Association" textFill="#190dc3">
+                     <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="adoption" layoutX="370.0" layoutY="17.0" prefHeight="38.0" prefWidth="97.0" text="Adoption" textFill="#0f0fd7">
+                     <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="assurance" layoutX="476.0" layoutY="20.0" text="Assurance" textFill="#0b1de4">
+                     <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="magasin" layoutX="595.0" layoutY="20.0" prefHeight="32.0" prefWidth="97.0" text="Magasin" textFill="#0d11d0">
+                     <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="veterinaire" layoutX="702.0" layoutY="20.0" text="Veterinaire" textFill="#0808f2">
+                     <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="UC" layoutX="837.0" layoutY="20.0" prefHeight="32.0" prefWidth="64.0">
+                     <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="523.0" prefWidth="871.0">
+               <children>
+                  <ImageView fitHeight="292.0" fitWidth="257.0" layoutX="6.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/img2.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="268.0" fitWidth="374.0" layoutX="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/img3.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="274.0" fitWidth="406.0" layoutX="263.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/im4.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="256.0" fitWidth="350.0" layoutX="381.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/img5.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="211.0" fitWidth="243.0" layoutX="668.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/img7.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="109.0" fitWidth="174.0" layoutX="735.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/img6.JPG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="127.0" fitWidth="180.0" layoutX="732.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/img8.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="associationimg" layoutX="31.0" layoutY="14.0" prefHeight="38.0" prefWidth="131.0" text="Association">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="evenementimg" layoutX="14.0" layoutY="254.0" prefHeight="32.0" prefWidth="131.0" text="Evenement">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="petsitterimg" layoutX="391.0" layoutY="194.0" prefHeight="26.0" prefWidth="97.0" text="PetSitter">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="adoptionimg" layoutX="488.0" layoutY="270.0" text="Adoption">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="magasinimg" layoutX="783.0" layoutY="75.0" text="Magasin">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="assuranceimg" layoutX="752.0" layoutY="181.0" text="Assurrance">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="veterinaireimg" layoutX="752.0" layoutY="262.0" text="Veterinaire">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="logoutButton" layoutX="757.0" layoutY="464.0" mnemonicParsing="false" text="Logout" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<AnchorPane id="AnchorPane" prefHeight="533.0" prefWidth="1047.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.EvenementController">
+   <children>
+      <SplitPane dividerPositions="0.29797979797979796" layoutY="1.0" prefHeight="532.0" prefWidth="1041.0">
+        <items>
+          <AnchorPane fx:id="gestionevent" minHeight="0.0" minWidth="0.0" prefHeight="530.0" prefWidth="404.0">
+               <children>
+                  <Label layoutX="88.0" layoutY="49.0" text="Evenement" textFill="#0be1bd">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="24.0" layoutY="127.0" text="Titre :" textFill="#05c1eb">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="159.0" text="Adresse :" textFill="#0ad3e1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="190.0" text="Date début :" textFill="#0bb9e4">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="222.0" text="Date fin :" textFill="#08c0ee">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="35.0" layoutY="257.0" text="Type :" textFill="#08e4e8">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="9.0" layoutY="291.0" text="Nombre de place :" textFill="#0bccee">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="35.0" layoutY="326.0" text="Détails :" textFill="#08c1eb">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="358.0" />
+                  <TextField fx:id="titre" layoutX="117.0" layoutY="123.0" />
+                  <TextField fx:id="adresse" layoutX="117.0" layoutY="155.0" />
+                  <TextField fx:id="type" layoutX="117.0" layoutY="253.0" />
+                  <TextField fx:id="nbrplace" layoutX="117.0" layoutY="287.0" />
+                  <TextField fx:id="details" layoutX="117.0" layoutY="322.0" />
+                  <DatePicker fx:id="datedebut" layoutX="116.0" layoutY="186.0" prefHeight="25.0" prefWidth="149.0" />
+                  <DatePicker fx:id="datefin" layoutX="116.0" layoutY="218.0" prefHeight="25.0" prefWidth="149.0" />
+                  <Button fx:id="ajoutevent" layoutX="97.0" layoutY="383.0" mnemonicParsing="false" onAction="#AjoutEvenement" prefHeight="31.0" prefWidth="114.0" text="Ajouter" textFill="#25dabc">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="modifevent" layoutX="98.0" layoutY="426.0" mnemonicParsing="false" onAction="#updateart" prefHeight="31.0" prefWidth="114.0" text="Modifier " textFill="#12dde8">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="suppevent" layoutX="98.0" layoutY="473.0" mnemonicParsing="false" onAction="#deleteart" prefHeight="31.0" prefWidth="114.0" text="Supprimer" textFill="#0bb4e8">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+          <AnchorPane fx:id="listcherts" minHeight="0.0" minWidth="0.0" prefHeight="530.0" prefWidth="716.0">
+               <children>
+                  <Label layoutX="37.0" layoutY="63.0" text="Chercher un evenement">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Label>
+                  <TableView fx:id="tabEvent" layoutX="27.0" layoutY="158.0" prefHeight="200.0" prefWidth="680.0">
+                    <columns>
+                      <TableColumn fx:id="titretab" prefWidth="75.0" text="Titre" />
+                      <TableColumn fx:id="adressetab" prefWidth="75.0" text="Adresse" />
+                        <TableColumn fx:id="datedebuttab" prefWidth="75.0" text="Date début" />
+                        <TableColumn fx:id="datefintab" prefWidth="75.0" text="Date fin" />
+                        <TableColumn fx:id="typetab" prefWidth="75.0" text="Type" />
+                        <TableColumn fx:id="nbrplacetab" prefWidth="75.0" text="Nombre de place" />
+                        <TableColumn fx:id="detailstab" prefWidth="75.0" text="Détails" />
+                        <TableColumn fx:id="nbrreservationtab" prefWidth="75.0" text="Réservation" />
+                        <TableColumn fx:id="archivetab" prefWidth="75.0" text="Archive" />
+                    </columns>
+                  </TableView>
+                  <BarChart fx:id="barchart" layoutX="44.0" layoutY="366.0" prefHeight="61.0" prefWidth="500.0">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+                  <TextField fx:id="rechEvent" layoutX="240.0" layoutY="64.0" promptText="donner le titre de l'event" />
+                  <Button fx:id="RetourButton" layoutX="646.0" layoutY="27.0" mnemonicParsing="false" text="Retour" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

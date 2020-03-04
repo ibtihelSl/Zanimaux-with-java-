@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="474.0" prefWidth="695.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AccueilAdminController">
+   <children>
+      <SplitPane dividerPositions="0.29797979797979796" prefHeight="486.0" prefWidth="695.0">
+        <items>
+          <AnchorPane maxWidth="120.0" minHeight="0.0" minWidth="120.0" prefHeight="484.0" prefWidth="120.0">
+               <children>
+                  <Button fx:id="buttonUser" layoutY="14.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="120.0" text="User" textFill="#18acc6">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <Button fx:id="buttonAssociation" layoutY="108.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="120.0" text="Association" textFill="#0ee1e4">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <Button fx:id="Magasin" layoutY="155.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="120.0" text="Magasin" textFill="#13bdd7">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <Button fx:id="buttonEvent" layoutY="61.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="120.0" text="Evenement" textFill="#0fc3d3">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <Button fx:id="veterinaire" layoutY="202.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="120.0" text="Veterinaire" textFill="#17dddd">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <Button fx:id="asurance" layoutY="249.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="120.0" text="Assurance" textFill="#17dddd">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="animal" layoutY="296.0" mnemonicParsing="false"  prefHeight="47.0" prefWidth="120.0" text="Animal" textFill="#17dddd">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="484.0" prefWidth="434.0">
+               <children>
+                  <ImageView fx:id="image" fitHeight="484.0" fitWidth="567.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../img/img11.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="logoutButton" layoutX="499.0" layoutY="14.0" mnemonicParsing="false" text="Logout" />
+                  <Label layoutX="203.0" layoutY="37.0" prefHeight="51.0" prefWidth="188.0" text="Zanimaux" textFill="#151ec9">
+                     <font>
+                        <Font name="System Bold Italic" size="35.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

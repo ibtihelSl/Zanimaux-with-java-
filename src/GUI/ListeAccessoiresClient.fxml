@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import org.controlsfx.control.Rating?>
+
+<AnchorPane id="AnchorPane" prefHeight="445.0" prefWidth="793.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ListeAccessoiresClientController">
+   <children>
+      <ImageView fx:id="img6" fitWidth="871.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/img6.JPG" />
+         </image>
+      </ImageView>
+      <Button fx:id="listmag" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#AfficheMAgasin" prefHeight="25.0" prefWidth="139.0" text="retour" />
+      <TableView fx:id="tableview1" layoutX="512.0" layoutY="289.0" prefHeight="198.0" prefWidth="304.0">
+         <columns>
+            <TableColumn fx:id="rat1" prefWidth="82.0" text="Nom" />
+            <TableColumn fx:id="rat" prefWidth="82.0" text="Rating" />
+            <TableColumn fx:id="commentaire" prefWidth="164.0" text="Commentaire" />
+         </columns>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem fx:id="delav" mnemonicParsing="false" onAction="#deleteavis" text="Delete" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+      <Rating fx:id="rating" layoutX="536.0" layoutY="224.0" onMouseClicked="#ajouterrating" />
+      <TextField fx:id="message" layoutX="549.0" layoutY="180.0" promptText="Ajouter votre avis" />
+      <JFXListView fx:id="listview" layoutX="14.0" layoutY="54.0" prefHeight="513.0" prefWidth="461.0" />
+      <ImageView fx:id="imgviw" fitHeight="100.0" fitWidth="139.0" layoutX="24.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

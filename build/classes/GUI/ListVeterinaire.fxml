@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="435.0" prefWidth="722.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ListVeterinaireController">
+     <children>
+      <TableView fx:id="tableview" layoutX="76.0" layoutY="14.0" prefHeight="381.0" prefWidth="542.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="76.0" AnchorPane.rightAnchor="104.0" AnchorPane.topAnchor="14.0">
+        <columns>
+          <TableColumn fx:id="nom" prefWidth="110.0" text="Nom" />
+          <TableColumn fx:id="address" prefWidth="113.0" text="Address" />
+            <TableColumn fx:id="ville" prefWidth="104.0" text="Ville" />
+            <TableColumn fx:id="phone" minWidth="0.0" prefWidth="103.0" text="Phone" />
+            <TableColumn fx:id="email" minWidth="0.0" prefWidth="105.0" text="Email" />
+        </columns>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem fx:id="supVet" mnemonicParsing="false" onAction="#SupprimerVeterinaire" text="Delete" />
+                <MenuItem fx:id="editVet" mnemonicParsing="false" onAction="#ModifierVet" text="Update" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+      <Button fx:id="ajouterVet" layoutX="212.0" layoutY="402.0" mnemonicParsing="false" onAction="#ajouterVet" prefHeight="25.0" prefWidth="200.0" text="Ajouter Un Nouveau veterinaire" textFill="#0986d6" />
+      <Button fx:id="retour" layoutX="428.0" layoutY="402.0" mnemonicParsing="false" onAction="#Retour" text="Retour" textFill="#0986d6" />
+      <Button fx:id="art" layoutX="493.0" layoutY="402.0" mnemonicParsing="false" onAction="#lesArticles" text="Les articles" textFill="#0986d6" />
+   </children>
+</AnchorPane>

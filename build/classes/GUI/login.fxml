@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="566.0" prefWidth="714.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.LoginController">
+   <children>
+      <ImageView fx:id="img" fitHeight="566.0" fitWidth="707.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/img1.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtUsername" layoutX="159.0" layoutY="147.0" />
+      <PasswordField fx:id="txtPassword" layoutX="159.0" layoutY="199.0" />
+      <Text fx:id="lblUserLogin" layoutX="74.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login :" wrappingWidth="63.13671526312828">
+         <font>
+            <Font size="17.0" />
+         </font></Text>
+      <Text fx:id="lblPassword" layoutX="23.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mot de passe :" wrappingWidth="118.00000154972076">
+         <font>
+            <Font size="17.0" />
+         </font></Text>
+      <Button fx:id="btnLogin" layoutX="555.0" layoutY="436.0" mnemonicParsing="false" onAction="#aksiLogin" prefHeight="25.0" prefWidth="92.0" text="Signin">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Button>
+      <Button fx:id="insrire" layoutX="438.0" layoutY="436.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="92.0" text="SignUp">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Button>
+      <Label fx:id="lblClose" layoutX="657.0" layoutY="14.0" prefHeight="28.0" prefWidth="21.0" text="X">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font></Label>
+      <ComboBox fx:id="combobox" editable="true" layoutX="161.0" layoutY="250.0" opacity="0.0" prefHeight="28.0" prefWidth="149.0" style="-fx-background-color: transparent; -fx-border-color: blue;" />
+      <Text fx:id="aslabel" layoutX="71.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="142.13671875" />
+      <Text fx:id="lblUsername" layoutX="74.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="127.13671875" />
+      <Text fx:id="labC" layoutX="78.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="107.13671875" />
+      <Label layoutX="234.0" layoutY="42.0" prefHeight="75.0" prefWidth="264.0" text="Zanimaux" textFill="#e17204">
+         <font>
+            <Font name="System Bold Italic" size="52.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

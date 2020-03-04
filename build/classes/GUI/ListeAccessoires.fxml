@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="432.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ListeAccessoiresController">
+   <children>
+      <TableView fx:id="tableview" layoutY="47.0" prefHeight="381.0" prefWidth="427.0">
+        <columns>
+          <TableColumn fx:id="nom" prefWidth="167.0" text="Nom" />
+          <TableColumn fx:id="prix" minWidth="0.0" prefWidth="130.0" text="Prix" />
+            <TableColumn fx:id="Espece" minWidth="0.0" prefWidth="147.0" text="Espece" />
+        </columns>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem fx:id="editacc" mnemonicParsing="false" onAction="#EditeAccessoires" text="Edit" />
+                  <MenuItem fx:id="delacc" mnemonicParsing="false" onAction="#DeleteAccessoites" text="Delete" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+      <Button fx:id="listMag" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" onAction="#ListeMagasin" prefHeight="25.0" prefWidth="87.0" text="Retour" />
+      <TableView fx:id="tableview1" layoutX="436.0" layoutY="149.0" prefHeight="279.0" prefWidth="248.0">
+         <columns>
+            <TableColumn fx:id="rat" prefWidth="132.0" text="Rating" />
+            <TableColumn fx:id="commentaire" minWidth="0.0" prefWidth="115.0" text="Commentaire" />
+         </columns>
+      </TableView>
+      <Label contentDisplay="CENTER" layoutX="128.0" layoutY="14.0" prefHeight="27.0" prefWidth="184.0" text="Liste Accessoires" textFill="#e19090">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="479.0" layoutY="109.0" prefHeight="27.0" prefWidth="184.0" text="Liste évaluation" textFill="#e19090">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

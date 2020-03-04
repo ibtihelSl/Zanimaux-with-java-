@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="GUI.ListFaqQuestionController">
+    <children>
+      <TableView fx:id="tableview" prefHeight="374.0" prefWidth="600.0" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="question" prefWidth="199.0" text="Question" />
+          <TableColumn fx:id="reponse" prefWidth="399.0" text="Reponse" />
+            
+        </columns>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem fx:id="supFaqQuestion" mnemonicParsing="false" onAction="#SupprimerFaqQuestion" text="Delete" />
+                <MenuItem fx:id="modifFaqQuestion" mnemonicParsing="false" onAction="#ModifierFaqQuestion" text="Update" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+      <Button fx:id="ajouterFaqQuestion" layoutX="177.0" layoutY="374.0" mnemonicParsing="false" onAction="#ajouterFaqQuestion" prefHeight="25.0" prefWidth="200.0" text="Ajouter Un Nouveau FaqQuestion" textFill="#0a7eab" />
+   </children> 
+</AnchorPane>

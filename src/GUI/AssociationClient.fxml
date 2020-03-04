@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="546.0" prefWidth="818.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="GUI.AssociationClientController">
+   <children>
+      <SplitPane dividerPositions="0.13419117647058823" layoutX="-4.0" layoutY="2.0" orientation="VERTICAL" prefHeight="546.0" prefWidth="818.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label fx:id="home" layoutX="26.0" layoutY="19.0" text="Home" textFill="#1e11cd">
+                     <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="evenement" layoutX="103.0" layoutY="19.0" text="Evenement" textFill="#1e11cd">
+                     <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="association" layoutX="234.0" layoutY="19.0" text="Association" textFill="#1e11cd">
+                     <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="adoption" layoutX="370.0" layoutY="19.0" text="Adoption" textFill="#1e11cd">
+                     <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="petsitter" layoutX="482.0" layoutY="19.0" text="PetSitter" textFill="#1e11cd">
+                     <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="magasin" layoutX="591.0" layoutY="19.0" text="Magasin" textFill="#1e11cd">
+                     <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="veterinaire" layoutX="696.0" layoutY="19.0" text="Veterinaire" textFill="#1e11cd">
+                     <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <ImageView fitHeight="468.0" fitWidth="816.0" layoutX="4.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../img/img14.jpg" />
+                     </image>
+                  </ImageView>
+                  <TableView fx:id="tabAssocia" layoutX="102.0" layoutY="128.0" prefHeight="246.0" prefWidth="621.0">
+                    <columns>
+                      <TableColumn fx:id="nom" prefWidth="96.0" text="Nom" />
+                      <TableColumn fx:id="adresse" prefWidth="76.0" text="Adresse" />
+                        <TableColumn fx:id="phone" prefWidth="96.0" text="Phone" />
+                        <TableColumn fx:id="email" prefWidth="118.0" text="Email" />
+                        <TableColumn fx:id="description" prefWidth="234.0" text="Description" />
+                    </columns>
+                  </TableView>
+                  <TextField fx:id="recherche" layoutX="264.0" layoutY="70.0" promptText="search" />
+                  <ChoiceBox fx:id="choiseBox" layoutX="450.0" layoutY="70.0" prefWidth="150.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

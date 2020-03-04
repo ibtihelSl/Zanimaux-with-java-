@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.EditAnimalAdminController">
+    <children>
+      <TextField fx:id="espece" layoutX="197.0" layoutY="40.0" promptText="Espece" />
+      <TextField fx:id="race" layoutX="197.0" layoutY="83.0" promptText="Race" />
+      <TextField fx:id="sexe" layoutX="197.0" layoutY="130.0" promptText="Sexe" />
+      <TextField fx:id="description" layoutX="197.0" layoutY="175.0" promptText="Description" />
+      <TextField fx:id="age" layoutX="197.0" layoutY="216.0" promptText="Age" />
+      <Button layoutX="199.0" layoutY="256.0" mnemonicParsing="false" onAction="#load" prefHeight="25.0" prefWidth="141.0" text="Upload" />
+      <ImageView fx:id="imgviewadd" fitHeight="150.0" fitWidth="200.0" layoutX="372.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="editanim" layoutX="346.0" layoutY="340.0" mnemonicParsing="false" onAction="#EditAnimal" text="Add" />
+      <Button fx:id="retour" layoutX="21.0" layoutY="14.0" mnemonicParsing="false" onAction="#ListeAnimal" text="Retour" />
+   </children>
+</AnchorPane>

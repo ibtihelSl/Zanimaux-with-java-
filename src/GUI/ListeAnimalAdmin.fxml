@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.ListeAnimalAdminController">
+   <children>
+      <TableView fx:id="tableview" layoutX="-1.0" layoutY="52.0" prefHeight="285.0" prefWidth="593.0">
+        <columns>
+          <TableColumn fx:id="espece" prefWidth="75.0" text="Espece" />
+          <TableColumn fx:id="race" prefWidth="75.0" text="Race" />
+            <TableColumn fx:id="sexe" prefWidth="75.0" text="Sexe" />
+            <TableColumn fx:id="description" prefWidth="83.0" text="Description" />
+            <TableColumn fx:id="age" prefWidth="83.0" text="Age" />
+            <TableColumn fx:id="img" prefWidth="106.0" text="img" />
+            <TableColumn fx:id="adopte" prefWidth="87.0" text="adopté" />
+        </columns>
+      </TableView>
+            <Button fx:id="retour" layoutX="8.0" layoutY="8.0" mnemonicParsing="false" onAction="#Menu" text="Retour" />
+      <Button fx:id="deleteanim" layoutX="399.0" layoutY="344.0" mnemonicParsing="false" onAction="#deleteanimal" text="Delete" />
+      <Button fx:id="editanim" layoutX="248.0" layoutY="344.0" mnemonicParsing="false" onAction="#editanimal" text="Edit" />
+      <Button fx:id="addanim" layoutX="91.0" layoutY="344.0" mnemonicParsing="false" onAction="#addanimal" text="Add" />
+      <Button fx:id="listeadop" layoutX="500.0" layoutY="344.0" mnemonicParsing="false" onAction="#listanimaladopte" text="list Adopté" />
+      <TextField fx:id="Recherche" layoutX="118.0" layoutY="14.0" promptText="Search" />
+      <ChoiceBox fx:id="choiseBox" layoutX="300.0" layoutY="14.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
